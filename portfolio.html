@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Satisfy font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <!-- Oleo Script Swash Caps font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="side-menu">
+
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="brand-name-container text-white fw-bold text-center">
+                    <p class="navbar-brand">
+                        Profile
+                    </p>
+                </div>
+            </div> 
+        <div class="sidebar-list">
+                <ul class="navbar-nav text-center text-white fw-bold">
+                    <li class="nav-item active">
+                        <a href="#main" class="nav-link" onclick="scrollMain()">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about me" class="nav-link" onclick="scrollAbout()">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link" onclick="scrollEducation()">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#achievements & skills" class="nav-link" onclick="scrollAchieve()">Achievements & Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link" onclick="scrollPro()">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" onclick="scrollContact()">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content"> 
+            <div class="navigationBar">    
+                <button id="sidebarToggle" class="btn sidebarToggle">
+                    <i class="fas fa-bars" id="btn"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="Main text-center fw-bold">
+        <span class="leftquote">"</span> <center>Success</center> is nothing more than a <br>few simple disciplines practiced <center>everyday.</center> <span class="rightquote">"</span>
+        <span class="author">
+            ~~~Jim Rohn~~~
+        </span>
+    </div>
+
+    <div class="About">
+        <h2 class="display-6 fw-bold">About me</h2>
+            <img src="C:\Users\user\OneDrive\Documents\GitHub\My-portfolio\IMG\IMG_20220628_112625.jpg" class="avatar" alt="photo">
+        <h1 class="fw-bold text-center">
+            Carson Lee
+        </h1>
+        <blockquote>
+            <span class="capital">I</span>t is a great pleasure to meet you, I am <strong class="bold1"> Carson Lee </strong>, an 18-year-old university sophomore student who is currently learning coding and capable of building some websites.
+                I am a <strong class="bold2"> self-taught web-developer</strong>.<div class="bold3"></div> However, I <strong class="bold3">Do Not</strong> possess any work experience in coding yet and yes this is my first time working as a freelance developer. 
+                It is tough to learn and work at the same time but I bet it is going to be worth it! Apart from this, being a science student, coding and other fields of study does not limit my potential and enthusiasm such as music, art, culinary, language, etc.
+                I am confident to build websites for you and fulfilling your needs as possible and hope for the great opportunity to collaborate with more proactive, reliable and studious coders in the Future.
+        </blockquote>
+    </div>
+    
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 340" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(62, 243, 236.869, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(11, 255, 180.612, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,0L48,17C96,34,192,68,288,102C384,136,480,170,576,175.7C672,181,768,159,864,136C960,113,1056,91,1152,107.7C1248,125,1344,181,1440,221C1536,261,1632,283,1728,243.7C1824,204,1920,102,2016,79.3C2112,57,2208,113,2304,153C2400,193,2496,215,2592,204C2688,193,2784,147,2880,124.7C2976,102,3072,102,3168,130.3C3264,159,3360,215,3456,215.3C3552,215,3648,159,3744,130.3C3840,102,3936,102,4032,119C4128,136,4224,170,4320,170C4416,170,4512,136,4608,153C4704,170,4800,238,4896,255C4992,272,5088,238,5184,221C5280,204,5376,204,5472,187C5568,170,5664,136,5760,102C5856,68,5952,34,6048,51C6144,68,6240,136,6336,141.7C6432,147,6528,91,6624,102C6720,113,6816,193,6864,232.3L6912,272L6912,340L6864,340C6816,340,6720,340,6624,340C6528,340,6432,340,6336,340C6240,340,6144,340,6048,340C5952,340,5856,340,5760,340C5664,340,5568,340,5472,340C5376,340,5280,340,5184,340C5088,340,4992,340,4896,340C4800,340,4704,340,4608,340C4512,340,4416,340,4320,340C4224,340,4128,340,4032,340C3936,340,3840,340,3744,340C3648,340,3552,340,3456,340C3360,340,3264,340,3168,340C3072,340,2976,340,2880,340C2784,340,2688,340,2592,340C2496,340,2400,340,2304,340C2208,340,2112,340,2016,340C1920,340,1824,340,1728,340C1632,340,1536,340,1440,340C1344,340,1248,340,1152,340C1056,340,960,340,864,340C768,340,672,340,576,340C480,340,384,340,288,340C192,340,96,340,48,340L0,340Z">
+        </path>
+        <defs>
+            <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(141.031, 227.999, 216.215, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(11, 255, 213.673, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,272L48,249.3C96,227,192,181,288,187C384,193,480,249,576,260.7C672,272,768,238,864,209.7C960,181,1056,159,1152,124.7C1248,91,1344,45,1440,34C1536,23,1632,45,1728,90.7C1824,136,1920,204,2016,209.7C2112,215,2208,159,2304,124.7C2400,91,2496,79,2592,79.3C2688,79,2784,91,2880,90.7C2976,91,3072,79,3168,96.3C3264,113,3360,159,3456,192.7C3552,227,3648,249,3744,215.3C3840,181,3936,91,4032,51C4128,11,4224,23,4320,34C4416,45,4512,57,4608,96.3C4704,136,4800,204,4896,198.3C4992,193,5088,113,5184,90.7C5280,68,5376,102,5472,96.3C5568,91,5664,45,5760,45.3C5856,45,5952,91,6048,107.7C6144,125,6240,113,6336,130.3C6432,147,6528,193,6624,198.3C6720,204,6816,170,6864,153L6912,136L6912,340L6864,340C6816,340,6720,340,6624,340C6528,340,6432,340,6336,340C6240,340,6144,340,6048,340C5952,340,5856,340,5760,340C5664,340,5568,340,5472,340C5376,340,5280,340,5184,340C5088,340,4992,340,4896,340C4800,340,4704,340,4608,340C4512,340,4416,340,4320,340C4224,340,4128,340,4032,340C3936,340,3840,340,3744,340C3648,340,3552,340,3456,340C3360,340,3264,340,3168,340C3072,340,2976,340,2880,340C2784,340,2688,340,2592,340C2496,340,2400,340,2304,340C2208,340,2112,340,2016,340C1920,340,1824,340,1728,340C1632,340,1536,340,1440,340C1344,340,1248,340,1152,340C1056,340,960,340,864,340C768,340,672,340,576,340C480,340,384,340,288,340C192,340,96,340,48,340L0,340Z">
+        </path>
+    </svg>
+
+    <svg id="wave2" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(62, 243, 236.869, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(11, 255, 180.612, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,0L60,24.5C120,49,240,98,360,147C480,196,600,245,720,253.2C840,261,960,229,1080,196C1200,163,1320,131,1440,155.2C1560,180,1680,261,1800,318.5C1920,376,2040,408,2160,351.2C2280,294,2400,147,2520,114.3C2640,82,2760,163,2880,220.5C3000,278,3120,310,3240,294C3360,278,3480,212,3600,179.7C3720,147,3840,147,3960,187.8C4080,229,4200,310,4320,310.3C4440,310,4560,229,4680,187.8C4800,147,4920,147,5040,171.5C5160,196,5280,245,5400,245C5520,245,5640,196,5760,220.5C5880,245,6000,343,6120,367.5C6240,392,6360,343,6480,318.5C6600,294,6720,294,6840,269.5C6960,245,7080,196,7200,147C7320,98,7440,49,7560,73.5C7680,98,7800,196,7920,204.2C8040,212,8160,131,8280,147C8400,163,8520,278,8580,334.8L8640,392L8640,490L8580,490C8520,490,8400,490,8280,490C8160,490,8040,490,7920,490C7800,490,7680,490,7560,490C7440,490,7320,490,7200,490C7080,490,6960,490,6840,490C6720,490,6600,490,6480,490C6360,490,6240,490,6120,490C6000,490,5880,490,5760,490C5640,490,5520,490,5400,490C5280,490,5160,490,5040,490C4920,490,4800,490,4680,490C4560,490,4440,490,4320,490C4200,490,4080,490,3960,490C3840,490,3720,490,3600,490C3480,490,3360,490,3240,490C3120,490,3000,490,2880,490C2760,490,2640,490,2520,490C2400,490,2280,490,2160,490C2040,490,1920,490,1800,490C1680,490,1560,490,1440,490C1320,490,1200,490,1080,490C960,490,840,490,720,490C600,490,480,490,360,490C240,490,120,490,60,490L0,490Z">
+        </path>
+        <defs>
+            <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(117.837, 243.936, 226.85, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(11, 255, 213.673, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,392L60,359.3C120,327,240,261,360,269.5C480,278,600,359,720,375.7C840,392,960,343,1080,302.2C1200,261,1320,229,1440,179.7C1560,131,1680,65,1800,49C1920,33,2040,65,2160,130.7C2280,196,2400,294,2520,302.2C2640,310,2760,229,2880,179.7C3000,131,3120,114,3240,114.3C3360,114,3480,131,3600,130.7C3720,131,3840,114,3960,138.8C4080,163,4200,229,4320,277.7C4440,327,4560,359,4680,310.3C4800,261,4920,131,5040,73.5C5160,16,5280,33,5400,49C5520,65,5640,82,5760,138.8C5880,196,6000,294,6120,285.8C6240,278,6360,163,6480,130.7C6600,98,6720,147,6840,138.8C6960,131,7080,65,7200,65.3C7320,65,7440,131,7560,155.2C7680,180,7800,163,7920,187.8C8040,212,8160,278,8280,285.8C8400,294,8520,245,8580,220.5L8640,196L8640,490L8580,490C8520,490,8400,490,8280,490C8160,490,8040,490,7920,490C7800,490,7680,490,7560,490C7440,490,7320,490,7200,490C7080,490,6960,490,6840,490C6720,490,6600,490,6480,490C6360,490,6240,490,6120,490C6000,490,5880,490,5760,490C5640,490,5520,490,5400,490C5280,490,5160,490,5040,490C4920,490,4800,490,4680,490C4560,490,4440,490,4320,490C4200,490,4080,490,3960,490C3840,490,3720,490,3600,490C3480,490,3360,490,3240,490C3120,490,3000,490,2880,490C2760,490,2640,490,2520,490C2400,490,2280,490,2160,490C2040,490,1920,490,1800,490C1680,490,1560,490,1440,490C1320,490,1200,490,1080,490C960,490,840,490,720,490C600,490,480,490,360,490C240,490,120,490,60,490L0,490Z">
+        </path>
+    </svg>
+
+    <div class="Education">
+        <h3 class="display-6 fw-bold">Education</h3>
+        
+        <img src="https://www.ucsi.edu.my/LANDINGPAGE/ucsiedu/img/ucsi_university_2.jpg" class="campus">
+        <img src="https://commchest.org.my/wp-content/uploads/2016/11/sjkc-on-pong-1.jpg" class="campus2">
+        
+            <table class="table-responsive table table-hover">
+                <thead class="table-dark ">
+                    <tr>
+                        <th></th>
+                        <th>Campuses</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="text-info bg-secondary">
+                    <tr>
+                        <td>SJK (C) On Pong 1 (Chinese school)
+                            <br>
+                            *Primary Education
+                        </td>
+                        <td>The Abundant Resource Center
+                            <br>
+                            *Secondary Education
+                        </td>
+                        <td>UCSI University
+                            <br>
+                            *Tertiary Education
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table-responsive table table-hover">
+                <thead class="table-success">
+                    <tr>
+                        <th></th>
+                        <th>Level of Education</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="text-success bg-warning">
+                    <tr>
+                        <td>UPSR (Ujian Penilaian Sekolah Rendah)</td>
+                        <td>IGCSE (grade 11)</td>
+                        <td>Foundation in Science (Graduated)</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M-33.43,25.08 C207.80,181.09 257.81,-51.90 529.68,126.09 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fab145"></path>
+    </svg>
+
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M-13.43,77.09 C226.56,167.09 382.19,39.08 520.30,132.09 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #fab145"></path>
+    </svg>
+
+
+    <div class="Achievements_Skills">
+        <h4 class="display-6 fw-bold">Achievements</h3>
+
+            <img src="https://user-images.githubusercontent.com/105184379/175819586-b2a06bd5-5b7f-4166-8ab9-9933b47d0c66.jpg" class="courseracert-1" alt="cert1">
+                <p class="description">
+                    <span class="capital2">I</span> have been awarded a certified digital certificate from <strong class="bold4"> John Hopkins University </strong>
+                        <br>
+                        and successfully finished the course <strong class="bold5"> "HTML, CSS & JavaScript for Web <br> Developers" </strong>
+                        <br>
+                        on <strong class="bold4"> Coursera </strong>, taught by <b>Prof. Yaakov Chaikin</b>. This recommended for beginners to <br> start coding.
+                </p>
+            <img src="https://user-images.githubusercontent.com/105184379/175817285-89816973-0d6b-4c48-941f-de04113c750e.jpg" class="courseracert-2" alt="cert2">
+                <p class="description2">
+                    <span class="capital2">H</span>ere is another digital certificate granted by the <strong class="bold6"> University of London, Goldsmiths</strong>, 
+                        <br>
+                        by which completing the <strong class="bold5"> "Responsive Website Basics: <br> Code with HTML, CSS, and JavaScript"</strong> course also on <strong class="bold4">Coursera</strong>.
+                        <br>
+                        This informative short course was taught by <b>Dr Matthew Yee-King, <br> Prof. Marco Gillies,</b> and <b>Dr Kate Devlin</b>.
+                </p>
+    
+            <h4 class="display-6 fw-bold mt-5" id="skills">My skills</h4>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-dark fw-bold text-center col-10">Coding Skills:</li>
+                        <ul class="list-group list-group-horizontal text-center" id="responsiveness">
+                            <li class="list-group-item list-group-item-danger">
+                                <img src="https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png" class="HTML5">
+                                <br>
+                                HTML5
+                            </li>
+                            <li class="list-group-item list-group-item-primary">
+                                <img src="https://cdn.icon-icons.com/icons2/844/PNG/512/CSS3_icon-icons.com_67069.png" class="CSS3">
+                                <br>
+                                CSS3
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <img src="https://www.seekpng.com/png/full/80-803501_javascript-logo-logo-de-java-script-png.png" class="JS">
+                                <br>
+                                JavaScript
+                            </li>
+                            <li class="list-group=item list-group-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png?20210507000024" class="BS5">
+                                <br>
+                                
+                                BootStrap
+                            </li>
+                            <li class="list-group-item list-group-item-info">
+                                <img src="https://www.logo.wine/a/logo/JQuery/JQuery-Logo.wine.svg" class="JQuery">
+                                <br>
+                                JQuery
+                            </li>
+                        </ul>
+                </ul>
+            
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="shapes" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1340" height="1250" preserveAspectRatio="none" viewBox="0 0 1340 1250">
+                    <g mask="url(&quot;#SvgjsMask1091&quot;)" fill="none">
+                        <rect width="1340" height="1250" x="0" y="0" fill="rgba(105, 7, 243, 1)"></rect>
+                        <path d="M666.487,624.362C747.82,626.288,822.738,581.748,864.522,511.942C907.508,440.127,920.861,347.137,873.895,277.859C830.717,214.169,743.152,213.263,666.487,219.828C603.231,225.245,547.047,255.426,512.658,308.793C474.683,367.724,453.341,439.913,484.06,502.931C518.367,573.309,588.215,622.508,666.487,624.362" fill="rgba(86, 28, 142, 0.4)" class="triangle-float3"></path>
+                        <path d="M1153.873,539.97C1187.092,537.755,1209.219,509.635,1225.872,480.806C1242.534,451.962,1256.956,418.17,1241.179,388.832C1224.792,358.361,1188.465,347.563,1153.873,346.929C1117.896,346.27,1079.969,355.048,1060.846,385.529C1040.691,417.656,1043.504,459.174,1063.073,491.662C1082.032,523.138,1117.209,542.415,1153.873,539.97" fill="rgba(86, 28, 142, 0.4)" class="triangle-float1"></path>
+                        <path d="M1460.8475040603996 107.29109748324167L1135.2346227741873-73.60494767576512 1135.2346227741873 252.00793361044714z" fill="rgba(86, 28, 142, 0.4)" class="triangle-float2"></path>
+                        <path d="M803.6132103326033 1065.4829209328218L550.9150473067577 821.4551414843949 559.5854308841764 1318.1810839586674z" fill="rgba(86, 28, 142, 0.4)" class="triangle-float3"></path>
+                        <path d="M175.7675092020547 622.5689674116753L121.4194315514195 930.7922321228942 483.99077391327364 676.9170450623105z" fill="rgba(86, 28, 142, 0.4)" class="triangle-float2"></path>
+                        <path d="M890.887,174.319C933.257,173.865,958.582,131.997,978.885,94.806C998.043,59.712,1012.622,19.8,994.769,-15.976C975.173,-55.244,934.767,-80.818,890.887,-81.531C845.799,-82.263,801.554,-59.581,780.992,-19.448C761.826,17.961,778.822,60.167,799.558,96.729C820.679,133.97,848.075,174.778,890.887,174.319" fill="rgba(86, 28, 142, 0.4)" class="triangle-float1"></path>
+                    </g>
+                    <defs>
+                        <mask id="SvgjsMask1091">
+                            <rect width="1340" height="1250" fill="#ffffff"></rect>
+                        </mask>
+                        <style>
+                            @keyframes float1 {
+                                0%{transform: translate(0, 0)}
+                                50%{transform: translate(-10px, 0)}
+                                100%{transform: translate(0, 0)}
+                            }
+                
+                            .triangle-float1 {
+                                animation: float1 5s infinite;
+                            }
+                
+                            @keyframes float2 {
+                                0%{transform: translate(0, 0)}
+                                50%{transform: translate(-5px, -5px)}
+                                100%{transform: translate(0, 0)}
+                            }
+                
+                            .triangle-float2 {
+                                animation: float2 4s infinite;
+                            }
+                
+                            @keyframes float3 {
+                                0%{transform: translate(0, 0)}
+                                50%{transform: translate(0, -10px)}
+                                100%{transform: translate(0, 0)}
+                            }
+                
+                            .triangle-float3 {
+                                animation: float3 6s infinite;
+                            }
+                        </style>
+                    </defs>
+                </svg>
+    </div>
+
+    <div class="Projects">
+        <h5 class="display-6 fw-bold">Projects</h5>
+        <div class="card bg-secondary">
+            <div class="card-body">
+                <div class="card-header bg-warning">Responsive static restaurant webpage with BootStrap</div>
+            </div>
+            <div class="card-body">
+                <a href="https://carson3377.github.io/Module-3-assignment/static%20restaurant.html" target="_blank" class="card-link">https://carson3377.github.io/Module-3-assignment/static%20restaurant.html</a>
+            </div>
+            <div class="card-body">
+                <div class="card-header bg-primary">Registration form with HTML & CSS</div>
+            </div>
+            <div class="card-body">
+                <a href="https://carson3377.github.io/Creative-Coderz-Form/form/Form.html" target="_blank" class="card-link">https://carson3377.github.io/Creative-Coderz-Form/form/Form.html</a>
+            <div class="card-body">
+                <div class="card-header bg-dark text-white">Building a calculator with JavaScript</div>
+            </div>
+            <div class="card-body">
+                <a href="https://carson3377.github.io/Creative-Coderz-calculator/calculator/calculator.html" target="_blank" class="card-link">https://carson3377.github.io/Creative-Coderz-calculator/calculator/calculator.html</a>
+            </div>
+            <div class="card-body">
+                <div class="card-header bg-danger">Restaurant website with JavaScript & JQuery</div>
+            </div>
+            <div class="card-body">
+                <a href="https://carson3377.github.io/Module-5-assignment/index.html" target="_blank" class="card-link">https://carson3377.github.io/Module-5-assignment/index.html</a>
+            </div>
+            <div class="card-body">
+                <div class="card-header bg-white">Switching dark & light mode with JQuery</div>
+            </div>
+            <div class="card-body">
+                <a href="https://carson3377.github.io/Creative-Coderz-darkmode/Responsive%20week%204/index4.html" target="_blank" class="card-link">https://carson3377.github.io/Creative-Coderz-darkmode/Responsive%20week%204/index4.html</a>
+            </div>
+        </div>
+    </div>
+    <svg viewBox="0 0 500 150" id="wave5" preserveAspectRatio="none" style="height: 100%; width: 120%;">
+        <path d="M-43.43,-31.89 C92.18,114.08 317.18,-84.90 525.31,55.08 L517.81,154.09 L-20.30,150.08 Z" style="stroke: none; fill: rgb(255, 44, 0);"></path>
+    </svg>
+    <svg viewBox="0 0 500 150" id="wave6" preserveAspectRatio="none" style="height: 100%; width: 120%;"><path d="M-23.44,116.08 C284.06,167.09 438.43,-0.90 527.80,148.08 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #ff2c00"></path></svg>
+   
+    
+    
+    <div class="Contact">
+        <h6 class="display-6 fw-bold">Contact</h6>
+        <div class="container">
+            <div class="footer">
+                If you have queries or doubts, <br>&#128293 please don't hesitate to email or chat with me for discussions! &#128293 <br> &#128522
+            </div>
+            <div class="personalinfo">
+                <span>&#128222 Call me: +601110653326</span>
+                <span>&#128231 Email me: cleecoder37@gmail.com</span>
+            </div>
+            <div class="socialmedia">
+                <a href="https://github.com/Carson3377?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/carson-lee-418a00238/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <svg viewBox="0 0 500 150" id="wave7" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M-62.19,-29.90 C175.93,109.08 567.18,4.10 552.18,-21.90 L502.81,163.08 L0.00,150.00 Z" style="stroke: none; fill: rgb(63, 63, 63);"></path>
+    </svg>
+
+    <script src="portfolio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>-->
+</body>
+</html>

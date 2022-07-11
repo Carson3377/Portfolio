@@ -1,0 +1,1140 @@
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.side-menu .sidebar {
+    height: 100%;
+    width: 250px;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    z-index: 1999;
+}            
+
+.side-menu .content{
+    margin-left: 250px;
+    transition: all 0.3s ease;
+}
+
+.side-menu .sidebar .navbar-brand{
+    background-color: rgb(68, 255, 193);
+    box-shadow: 5px 5px 20px;
+    padding: 30px;
+    font-size: 20px;
+    animation: blinkingbackground 10s infinite;
+}
+
+@keyframes blinkingbackground {
+    0% {color: red;}
+    15% {color: orange;}
+    30% {color: yellow;}
+    45% {color: green;}
+    60% {color: blue;}
+    75% {color: violet;}
+    90% {color: black;}
+    100% {color: white;}
+}
+
+.navbar-nav {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.nav-item:hover {
+    background-color: rgb(39, 39, 39);
+    transition: all 0.5s ease-out;
+}
+
+.nav-item:active {
+    background-color: black;
+}
+
+.side-menu.active .sidebar {
+    left: -270px;
+}
+
+.side-menu.active .content {
+    margin-left: 0;
+    width: 100%;
+}
+
+.navigationBar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 45px 0;
+}
+
+.sidebarToggle {
+    font-size: 30px !important;
+    color: black;
+    margin-left: 0;
+    z-index: 1000;
+    background-color: gray !important;
+    transition: all 0.3s ease;
+    position: fixed;
+}
+
+.sidebarToggle:hover{
+    color: white !important;
+}
+
+.Main {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    margin-top: -90px;
+    background-image: linear-gradient(to right, rgb(74, 74, 255) , grey , rgb(216, 216, 216) , grey , rgb(74, 74, 255));
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    border: none;
+}
+
+.leftquote {
+    margin-right: 300px;
+}
+
+.rightquote {
+    margin-left: 300px;
+}
+
+.author {
+    display: flex;
+    justify-content: right;
+    font-size: 30px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: bolder;
+    padding-right: 100px;
+}
+
+.About {
+    position: absolute;
+    top: 800px;
+    left: 60px;
+    width: 100%;
+    z-index: 998;
+}
+
+.avatar {
+    width: 15%;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    clip-path: circle();
+}
+
+h1 {
+    position: absolute;
+    left: 25px;
+    top: 290px;
+    font-size: 40px !important;
+}
+
+h2 {
+    position: relative;
+    left: 20px;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    background-image: linear-gradient(to right, cyan, white);
+    max-width: 200px;
+    box-shadow: 5px, 5px, 5px;
+}
+
+blockquote {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 20px 250px;
+    line-height: 2.5rem;
+}
+
+.capital {
+    font-size: 40px;
+}
+
+strong.bold1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(50, 50, 255);
+}
+
+strong.bold2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 136, 0);
+}
+
+strong.bold3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(255, 66, 66);
+}
+
+svg#wave  {
+    margin-top: 300px;
+}
+svg#wave2 {
+    margin-top: 0;
+}
+
+.Education {
+    position: absolute;
+    top: 1900px;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 5px, 5px, 5px;
+}
+
+h3 {
+    position: absolute;
+    right: 250px;
+    top: -100px;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    background-image: linear-gradient(to right, white, yellow);
+    max-width: 500px;
+    box-shadow: 5px 5px 5px;
+}
+
+/* photo */
+.campus {
+    width: 35%;
+    border-radius: 100px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    transform: rotate(-15deg);
+}
+
+/* photo */
+.campus2 {
+    width: 30%;
+    border-radius: 100%;
+    position: absolute;
+    right: 30px;
+    transform: rotate(15deg);
+}
+
+svg#wave3 {
+    margin-top: 80px;
+}
+
+svg#wave4 {
+    margin-top: 0px;
+}
+
+.Achievements_Skills {
+    position: absolute;
+    top: 3200px;
+    left: 60px;
+}
+
+h4 {
+    position: relative;
+    left: 20px;
+    top: -30px;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    background-image: linear-gradient(to right, purple, white);
+    max-width: 500px;
+}
+
+/* John Hopkins University Certificate */
+.courseracert-1 {
+    width: 30%;
+    position: absolute;
+    left: 50px;
+}
+
+/* University of London Certificate */
+.courseracert-2 {
+    width: 30%;
+    position: relative;
+    left: 760px;
+    bottom: -100px;
+}
+
+p.description {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 0;
+    left: 550px;
+    line-height: 50px;
+}
+
+.capital2 {
+    font-size: 40px;
+}
+
+strong.bold4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(87, 87, 255);
+}
+
+strong.bold5 {
+    font-size: 25px;
+    font-weight: bold;
+    color: yellowgreen;
+}
+
+p.description2 {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    line-height: 50px;
+    position: relative;
+    top: -180px;
+    left: 30px;
+}
+
+.list-group-item {
+    margin-left: -27px;
+    width: 20%;
+}
+
+.HTML5, .CSS3, .JS, .BS5 {
+    width: 50%;
+}
+
+.JQuery {
+    width: 60%;
+}
+
+svg#shapes {
+    margin-top: -1210px;
+    margin-left: -60px;
+}
+
+.Projects {
+    position: absolute;
+    top: 4900px;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 5px, 5px, 5px;
+}
+
+h5 {
+    position: absolute;
+    right: 210px;
+    top: -80px;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    background-image: linear-gradient(to right, white, brown);
+    max-width: 500px;
+    box-shadow: 5px 5px 5px;
+}
+
+.card {
+    width: 60%;
+    margin-left: 100px;
+}
+
+.card-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-body a {
+    text-decoration: none;
+    color: lightgreen;
+}
+
+svg#wave5 {
+    margin-top: -1100px;
+}
+
+svg#wave6 {
+    margin-top: -350px;
+}
+
+.Contact {
+    position: absolute;
+    top: 1200px;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    box-shadow: 5px, 5px, 5px;
+}
+
+h6 {
+    position: absolute;
+    left: 620px;
+    top: -60px;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    background-image: linear-gradient(white, black);
+    max-width: 500px;
+    box-shadow: 5px 5px 5px;
+}
+ 
+.container {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+}
+
+.footer {
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 2px solid white;
+}
+
+.personalinfo > span {
+    display: block;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+svg#wave7 {
+    margin-bottom: -800px;
+}
+
+.socialmedia {
+    text-align: right;
+    font-size: 40px;
+    position: absolute;
+    right: 400px;
+    bottom: 30px;
+    border-left: 2px solid white;
+}
+
+
+/*--------------- Media Queries ---------------*/
+
+
+/*--- Desktop view ---*/
+@media (min-width: 1200px) {
+    
+/*--- About me section ---*/
+    .avatar {
+        width: 200px;
+    }
+
+    svg#wave2 {
+        height: 600px;
+        width: 2200px;
+    }
+
+/*--- Education section ---*/
+    .Education {
+        margin-top: 100px;
+    }
+
+    /*--- Achievements & Skills section ---*/
+    @media (max-width: 1325px) and (min-width: 1180px) {
+        .courseracert-1 {
+            position: absolute;
+            left: 20px;
+        }
+
+        p.description {
+            position: relative;
+            top: 0;
+            left: 420px;
+            line-height: 45px;
+        }
+
+        .courseracert-2 {
+            position: relative;
+            left: 730px;
+            bottom: -100px;
+        }
+
+        p.description2 {
+            line-height: 50px;
+            position: relative;
+            top: -180px;
+            left: -10px;
+        }
+
+        .list-group-item{
+            margin-left: -40px;
+        }
+
+        .list-group-item-dark {
+            margin-left: -40px;
+        }
+
+        /*--- Projects section ---*/
+        @media (max-width: 1254px) and (min-width: 1200px) {
+            h5 {
+                position: absolute;
+                right: 210px;
+                top: -30px;
+            }
+
+            svg#wave5 {
+                width: 150% !important;
+            }
+
+            svg#wave6 {
+                margin-top: -320px;
+            }
+        }
+    }
+
+        /*--- Contact section ---*/
+        @media (max-width: 1290px) and (min-width: 1200px) {
+            h6 {
+                position: absolute;
+                left: 530px;
+                top: -70px;
+            }
+
+            svg#wave7 {
+                width: 130% !important;
+            }
+        }
+}
+
+/*--- Tablet view ---*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+/*--- About me section ---*/
+    .About {
+        margin-top: 0px;
+    }
+
+    .avatar {
+        width: 190px;
+    }
+
+    blockquote {
+        font-size: 15px;
+    }
+
+    svg#wave {
+        height: 300px;
+
+    }
+
+    svg#wave2 {
+        height: 660px;
+    }
+
+/*--- Education section ---*/
+    .Education {
+        margin-top: 100px;
+    }
+
+    svg#wave3 {
+        margin-top: -100px;
+    }
+
+    h3 {
+        position: absolute;
+        right: 180px;
+    }
+
+/*--- Achievements & Skills section ---*/
+    .Achievements_Skills{
+        position: absolute;
+        top: 3300px;
+    }
+
+    h4 {
+        position: relative;
+        left: 150px;
+        top: -260px;
+    }
+
+    .courseracert-1 {
+        position: absolute;
+        left: 230px;
+        top: -210px;
+        width: 25%;
+    }
+
+    p.description {
+        position: relative;
+        top: -10px;
+        left: 60px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    .courseracert-2 {
+        position: relative;
+        left: 240px;
+        bottom: 20px;
+        width: 25%;
+    }
+
+    p.description2 {
+        line-height: 40px;
+        position: relative;
+        top: -10px;
+        left: 50px;
+        font-size: 16px;
+    }
+
+    #skills {
+        position: absolute;
+        top: 800px;
+        left: 300px;
+    }
+
+    .list-group-item{
+        margin-left: -40px;
+        position: absolute;
+        top: 200px;
+    }
+
+    .list-group-item-dark {
+        margin-left: -40px;
+    }
+
+    .col-10 {
+        width: 73% !important;
+    }
+
+    #responsiveness {
+        width: 85%;
+    }
+
+    svg#shapes {
+        height: 1450px;
+        margin-top: -1200px;
+    }
+
+    .HTML5, .CSS3, .JS, .BS5 {
+        width: 60%;
+    }
+    
+    .JQuery {
+        width: 70%;
+    }
+
+/*--- Projects section ---*/
+    @media (max-width: 1199px) and (min-width: 992px){
+        h5 {
+            position: absolute;
+            top: -50px;
+            right: 40px;
+        }
+
+        .card {
+            width: 80%;
+            margin-left: 30px;
+        }
+
+        .card-header, .card-body a {
+            font-size: 15px;
+        }
+
+        svg#wave5 {
+            margin-top: -980px;
+            width: 200% !important;
+        }
+
+        svg#wave6 {
+            margin-top: -230px;
+        }
+    }
+
+/*--- Contact section ---*/
+    h6 {
+        position: absolute;
+        left: 450px;
+        top: -90px;
+    }
+
+    svg#wave7 {
+        width: 160% !important;
+    }
+}
+
+/*--- Mobile view ---*/
+@media (min-width:768px) and (max-width:991px) {
+    
+/*--- About me section ---*/
+    .avatar {
+        width: 140px;
+        margin-left: 140px;
+    }
+
+    blockquote {
+        font-size: 15px;
+        line-height: 30px;
+        position: absolute;
+        top: 220px;
+        left: -200px;
+    }
+
+    h1 {
+        position: absolute;
+        top: 200px;
+        left: 165px;
+        font-size: 30px !important;
+    }
+
+    h2 {
+        position: absolute;
+        left: 180px;
+    }
+
+    svg#wave {
+        height: 350px;
+    }
+
+    svg#wave2 {
+        height: 630px;
+    }
+
+/*--- Education section ---*/
+    .Education {
+        margin-top: 100px;
+    }
+
+    h3 {
+        position: absolute;
+        right: 180px;
+    }
+
+    svg#wave4 {
+        margin-top: -100px;
+    }
+
+/*--- Achievements & Skills ---*/
+    .Achievements_Skills{
+        position: absolute;
+        top: 3330px;
+    }
+
+    h4 {
+        position: relative;
+        left: 80px;
+        top: -310px;
+    }
+
+    .courseracert-1 {
+        position: absolute;
+        left: 180px;
+        top: -220px;
+        width: 25%;
+    }
+
+    p.description {
+        position: relative;
+        top: -10px;
+        left: 20px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    .courseracert-2 {
+        position: relative;
+        left: 180px;
+        bottom: 20px;
+        width: 25%;
+    }
+
+    p.description2 {
+        line-height: 40px;
+        position: relative;
+        top: -10px;
+        left: 20px;
+        font-size: 16px;
+    }
+
+    #skills {
+        position: absolute;
+        top: 800px;
+        left: 260px;
+    }
+
+    .list-group-item{
+        margin-left: -40px;
+        position: absolute;
+        top: 200px;
+    }
+
+    .col-10 {
+        width: 55.5% !important;
+    }
+
+    #responsiveness {
+        width: 68%;
+    }
+
+    svg#shapes {
+        height: 1450px;
+    }
+
+/*--- Projects section ---*/
+    h5 {
+        position: absolute;
+        top: -10px;
+        right: 60px;
+    }
+
+    .card {
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .card-header, .card-body a {
+        font-size: 15px;
+    }
+
+    svg#wave5 {
+        margin-top: -1000px;
+        width: 300% !important;
+    }
+
+    svg#wave6 {
+        margin-top: -200px;
+    }
+
+/*--- Contact section ---*/
+    h6 {
+        position: absolute;
+        left: 320px;
+        top: 20px;
+    }
+
+    svg#wave7 {
+        width: 230% !important;
+        margin-top: 280px;
+    }
+
+    .container{
+        margin-top: 100px;
+    }
+
+    .socialmedia {
+        position: absolute;
+        right: 160px;
+        bottom: 30px;
+    }
+}
+
+/*--- Smaller size mobile view ---*/
+@media (max-width: 767px) and (min-width: 500px) {
+
+/*--- About me section ---*/
+    .About {
+        margin-top: -10px;
+    }
+
+    .avatar {
+        width: 100px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    blockquote {
+        font-size: 11px;
+        line-height: 30px;
+        position: absolute;
+        top: 190px;
+        left: -250px;
+    }
+
+    h1 {
+        position: absolute;
+        top: 160px;
+        left: 20px;
+        font-size: 30px !important;
+    }
+
+    h2 {
+        position: absolute;
+        left: 40px;
+        top: 20px;
+    }
+
+    svg#wave {
+        height: 480px;
+    }
+
+    svg#wave2 {
+        height: 540px;
+    }
+
+/*--- Education section ---*/
+    .Education {
+        margin-top: 280px;
+    }
+
+    h3 {
+        position: absolute;
+        right: 100px;
+        top: -160px;
+    }
+
+    .campus {
+        width: 50%;
+    }
+
+    .campus2 {
+        width: 40%;
+    }
+
+/*--- Achievements & Skills ---*/
+    .Achievements_Skills{
+        position: absolute;
+        top: 3500px;
+    }
+
+    h4 {
+        position: relative;
+        left: 20px;
+        top: -430px;
+        max-width: 400px;
+    }
+
+    .courseracert-1 {
+        position: absolute;
+        left: 80px;
+        top: -380px;
+        width: 22%;
+    }
+
+    p.description {
+        position: relative;
+        top: -210px;
+        left: -50px;
+        line-height: 40px;
+        font-size: 12px;
+    }
+
+    .courseracert-2 {
+        position: relative;
+        left: 80px;
+        bottom: 220px;
+        width: 22%;
+    }
+
+    p.description2 {
+        line-height: 40px;
+        position: relative;
+        top: -220px;
+        left: -50px;
+        font-size: 12px;
+    }
+
+    #skills {
+        position: absolute;
+        top: 460px;
+        left: 150px;
+    }
+
+    .list-group-item{
+        margin-left: -40px;
+        position: absolute;
+        top: -180px;
+    }
+
+    .col-10 {
+        width: 18% !important;
+        margin-left: 90px;
+    }
+
+    #responsiveness {
+        display: inline-block;
+        margin-left: 130px;
+    }
+
+    svg#shapes {
+        height: 1700px;
+        margin-top: -2040px;
+    }
+
+/*--- Projects section ---*/
+    h5 {
+        position: absolute;
+        top: 280px;
+        right: 60px;
+    }
+
+    .card {
+        width: 70%;
+        margin-left: 20px;
+        margin-top: 300px;
+    }
+
+    .card-header, .card-body a {
+        font-size: 15px;
+    }
+
+    svg#wave5 {
+        margin-top: -900px;
+        width: 500% !important;
+    }
+
+    svg#wave6 {
+        margin-top: -300px;
+        width: 240% !important;
+    }
+
+    @media (max-width: 680px) and (min-width: 500px) {
+        h5 {
+            position: absolute;
+            top: 330px;
+            right: 30px;
+        }
+
+        .card {
+            width: 70%;
+            margin-left: 20px;
+            margin-top: 350px;
+        }
+
+        svg#wave5 {
+            margin-top: -1100px;
+            width: 750% !important;
+        }
+    
+        svg#wave6 {
+            margin-top: -200px;
+            width: 200% !important;
+        }
+    }
+
+/*--- Contact section ---*/
+    h6 {
+        position: absolute;
+        left: 320px;
+        top: 660px;
+    }
+
+    svg#wave7 {
+        width: 300% !important;
+        margin-top: 280px;
+    }
+
+    .container{
+        margin-top: 750px;
+    }
+
+    .socialmedia {
+        position: absolute;
+        right: 180px;
+        bottom: 30px;
+    }
+
+    @media (max-width: 740px) and (min-width: 681px) {
+        svg#wave7 {
+            width: 260% !important;
+            margin-top: 280px;
+        }
+
+        .container{
+             margin-top: 630px;
+        }
+
+        h6 {
+            position: absolute;
+            left: 320px;
+            top: 560px;
+        }
+
+        .socialmedia {
+            position: absolute;
+            right: 120px;
+            bottom: 30px;
+        }
+    }
+
+    @media (max-width: 680px) and (min-width: 638px) {
+        svg#wave7 {
+            width: 340% !important;
+            margin-top: 280px;
+        }
+
+        .container{
+            margin-top: 940px;
+        }
+
+        h6 {
+            position: absolute;
+            left: 320px;
+            top: 880px;
+        }
+
+        .socialmedia {
+            position: absolute;
+            right: 90px;
+            bottom: 30px;
+        }
+    }
+
+    @media (max-width:637px) and (min-width: 600px) {
+        svg#wave7 {
+            width: 340% !important;
+            margin-top: 280px;
+        }
+
+        .container{
+            margin-top: 880px;
+        }
+
+        h6 {
+            position: absolute;
+            left: 280px;
+            top: 780px;
+        }
+
+        .socialmedia {
+            position: absolute;
+            right: 50px;
+            bottom: 30px;
+        }
+    }
+
+    @media (max-width: 599px) and (min-width: 501px) {
+        svg#wave7 {
+            width: 400% !important;
+            margin-top: 280px;
+        }
+
+        .container{
+            margin-top: 770px;
+        }
+
+        h6 {
+            position: absolute;
+            left: 240px;
+            top: 680px;
+        }
+
+        .socialmedia {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .container{
+            margin-top: 660px;
+        }
+
+        h6 {
+            position: absolute;
+            left: 240px;
+            top: 600px;
+        }
+
+        .socialmedia {
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+        }
+    }
+}
